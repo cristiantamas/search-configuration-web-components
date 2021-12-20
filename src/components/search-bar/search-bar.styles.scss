@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: var(--eco-15);
+
+
+  background-color: var(--eco-background);
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    gap: var(--eco-0875);
+
+    background-color: var(--eco-container);
+    padding: 0 var(--eco-075);
+
+    &.rounded {
+      border-radius: var(--eco-04);
+    }
+
+    &.oval {
+      border-radius: var(--eco-15);
+    }
+
+    &.outline {
+      background-color: var(--eco-surface);
+      color: var(--eco-text-reduce);
+      border: 1px solid var(--eco-text-reduce);
+    }
+  }
+
+  input {
+    font-family: var(--eco-font);
+    padding: var(--eco-075) 0;
+
+    font-size: var(--eco-fs-1);
+    background-color: inherit;
+    border-radius: inherit;
+    cursor:pointer;
+  }
+
+  button {
+    font-family: var(--eco-font);
+    font-size: var(--eco-fs-125);
+    color: var(--eco-surface);
+    background-color: var(--eco-primary-500);
+    cursor:pointer;
+
+    padding: var(--eco-0625) var(--eco-1625);
+
+    &.rounded {
+      border-radius: var(--eco-04);
+    }
+
+    &.oval {
+      border-radius: var(--eco-15);
+    }
+  }
+}
