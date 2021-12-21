@@ -4,7 +4,7 @@ import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'search-configuration-web-components',
-  globalStyle: './src/assets/global.scss',
+  globalStyle: './src/assets/styles/global.scss',
   buildEs5: true,
   minifyJs: false,
   extras: {

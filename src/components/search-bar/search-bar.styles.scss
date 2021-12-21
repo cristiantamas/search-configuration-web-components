@@ -1,8 +1,9 @@
+@import "src/assets/styles/extension-classes.scss";
+
 .container {
   display: flex;
   align-items: center;
   gap: var(--eco-15);
-
 
   background-color: var(--eco-background);
 
@@ -12,7 +13,8 @@
     gap: var(--eco-0875);
 
     background-color: var(--eco-container);
-    padding: 0 var(--eco-075);
+    
+    @extend .eco-ph-075;
 
     &.rounded {
       border-radius: var(--eco-04);
@@ -29,24 +31,19 @@
     }
   }
 
-  input {
-    font-family: var(--eco-font);
-    padding: var(--eco-075) 0;
+  img {
+    width: var(--eco-1125);
+    height: var(--eco-1125);
+  }
 
-    font-size: var(--eco-fs-1);
+  input {
     background-color: inherit;
     border-radius: inherit;
-    cursor:pointer;
   }
 
   button {
-    font-family: var(--eco-font);
-    font-size: var(--eco-fs-125);
     color: var(--eco-surface);
     background-color: var(--eco-primary-500);
-    cursor:pointer;
-
-    padding: var(--eco-0625) var(--eco-1625);
 
     &.rounded {
       border-radius: var(--eco-04);
