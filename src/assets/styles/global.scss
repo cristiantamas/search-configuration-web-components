@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import 'src/assets/styles/extension-classes.scss';
+
+:root {
+  /*Colors*/
+  --eco-container: #ececec;
+  --eco-surface: #ffffff;
+
+  --eco-text: #1a1919;
+  --eco-text-reduce: #5c5858;
+
+  --eco-primary-500: #272f96;
+  --eco-primary-700: #1b2169;
+
+  --eco-background: #f6f6f7;
+
+  /*Fonts*/
+  --eco-font: 'IBM Plex Sans', sans-serif;
+
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+
+  /*Dimensions*/
+  --eco-04: 0.4rem;
+  --eco-075: 0.75rem;
+  --eco-0625: 0.625rem;
+  --eco-0875: 0.875rem;
+  --eco-1: 1rem;
+  --eco-1125: 1.125rem;
+  --eco-125: 1.25rem;
+  --eco-15: 1.5rem;
+  --eco-1625: 1.625rem;
+}
+
+body {
+  background-color: var(--eco-background);
+  font-family: var(--eco-font);
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button,
+input {
+  font-size: var(--eco-0875);
+
+  /*reset defaults*/
+  border: 0;
+  &:focus {
+    outline: none;
+  }
+
+  cursor: pointer;
+}
+
+input {
+  @extend .eco-pa-0625;
+
+  &::placeholder {
+    color: var(--eco-text);
+  }
+}
+
+button {
+  font-weight: var(--font-weight-light);
+
+  @extend .eco-pv-0625, .eco-ph-1625;
+
+  &:hover {
+    background-color: var(--eco-primary-700);
+  }
+}

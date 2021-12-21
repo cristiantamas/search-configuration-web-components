@@ -1,4 +1,4 @@
-import { Component, Prop, Event, h, getAssetPath, EventEmitter, State } from '@stencil/core';
+import { Component, Prop, Event, getAssetPath, EventEmitter, State, h } from '@stencil/core';
 
 @Component({
   tag: 'search-bar',
@@ -7,7 +7,6 @@ import { Component, Prop, Event, h, getAssetPath, EventEmitter, State } from '@s
 export class SearchBar {
   @Prop() inputClass: string;
   @Prop() buttonClass: string;
-
   @State() searchText: string;
 
   @Event() emitSearchText: EventEmitter<string>;
